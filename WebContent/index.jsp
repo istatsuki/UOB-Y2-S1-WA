@@ -8,7 +8,7 @@
 </head>
 <body>
 <form action="LoggingIn" method="get">
-GMail Address: <input name="GMail Address"> <br>
+GMail Address: <input name="GMail Address" value=<%=request.getAttribute("account")%>> <br>
 Password: <input type="password" name="password"><br>
 <input type="submit" value="Log In">
 </form>

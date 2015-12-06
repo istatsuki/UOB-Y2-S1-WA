@@ -34,6 +34,8 @@ public class LoggingIn extends HttpServlet {
 		String account = request.getParameter("GMail Address");  
 	    String password = request.getParameter("password");
 	    
+	    request.setAttribute("account", account);
+	    
 	    // create a mail model with the account and password
 	    MailModel m = new MailModel(account, password);
 	    
